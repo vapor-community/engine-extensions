@@ -8,10 +8,10 @@ let package = Package(
         .library(name: "EngineExtensions", targets: ["EngineExtensions"])
     ],
     dependencies: [
-        .package(url: "https://github.com/vapor/engine.git", from: "3.0.0-beta")
+        .package(url: "https://github.com/vapor/engine.git", from: "3.0.0-rc")
     ],
     targets: [
-        .target(name: "EngineExtensions", dependencies: ["FormURLEncoded", "HTTP", "Multipart", "Routing", "WebSocket"]),
+        .target(name: "EngineExtensions", dependencies: ["FormURLEncoded", "HTTP", "Multipart", "WebSocket"]),
         .testTarget(name: "EngineExtensionsTests", dependencies: ["EngineExtensions"])
     ]
 )
