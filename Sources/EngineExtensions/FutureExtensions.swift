@@ -3,6 +3,9 @@ import WebSocket
 import Foundation
 
 
+// MARK: - Methods
+// MARK: - WebSockets
+
 /// EngineExtensions: Sends the expectation of self to a websocket.
 ///
 ///    router.websocket("demo") { (req, ws) in
